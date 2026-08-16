@@ -13,7 +13,7 @@ time = distance / speed
 
 print(f"At speed of {speed} km/h, it will take {time} hours to reach the moon.\n")
 
-distance_24h = distance / 24
-remaining_distance = distance - distance_24h
+distance_traveled_24h = speed * 24
+remaining_distance = distance - distance_traveled_24h
 
 print(f"After 24 hours, the remaining distance is {remaining_distance}.")
