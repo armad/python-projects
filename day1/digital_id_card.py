@@ -5,14 +5,14 @@
 name = input("What's your name? ")
 age = int(input("What's your age? "))
 height = float(input("What's your height? "))
-is_premium = bool("True")
+is_premium = True
 
-# We need asterisks to make it seem like a nicely formatted digital card.
+# 15 asterisks to match the max lenght of each line.
 
-print("*" * 15)
+print("*" * 20)
 print("DIGITAL ID CARD\n")
 print(f"Name: {name}")
 print(f"Age: {age}")
 print(f"Height: {height}")
-print(f"Premium Status: {is_premium}\t")
-print("*" * 15)
+print(f"Premium Status: {is_premium}\n")
+print("*" * 20)
