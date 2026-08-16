@@ -8,4 +8,13 @@ price = float(input("What's the price for each coffee? "))
 TAX_RATE = 0.12
 
 subtotal = number_coffees * price
-total = subtotal + (subtotal * TAX_RATE)
+total = round(subtotal + (subtotal * TAX_RATE), 2)
+
+print("*" * 30)
+print("\tRECEIPT\t\n")
+print(f"Name: {name}\n")
+print("Breakdown\n")
+print(f"{number_coffees}x\t Coffee\t\t ${subtotal}\n")
+print(f"Tax rate: {TAX_RATE * 100}%")
+print(f"TOTAL: ${total}")
+print("*" * 30)
